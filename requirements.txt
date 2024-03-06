@@ -14,4 +14,4 @@ psycopg2-binary==2.9.6
 email-validator==1.2.1
 Flask-Migrate
 gunicorn==21.2.0
-twilio
+twilio==8.11.1
