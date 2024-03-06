@@ -1,0 +1,103 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+
+
+
+
+<!-- Main -->
+<section id="about-us-slideshow" class="container-fluid">
+    <div class="container-fluid">
+        <div class="row align-items-center service-inner-hero" style="background-color: #365486;">
+            <!--Text-->
+            <div class="col-lg-4 col-md-6 text-center  py-0 service-text-div">
+                <h1 class="display-4 fw-bold lh-1 text-white blur-text">About Us</h1>
+                <p class="lead text-white blur-text-p">Providing Perosnalised Care For Every Need</p>
+                <div class="d-grid gap-2 d-md-flex justify-content-center  mb-4 mb-lg-3">
+                    <a href="{{ url_for('contact_us') }}" class="btn btn-light btn-lg px-4 me-md-2 fw-bold servies-hero-btn">Contact
+                        Us</a>
+                    <a href="{{ url_for('get_jobs') }}" class="btn btn-outline-light btn-lg px-4 servies-hero-btn">Join Us</a>
+                </div>
+            </div>
+            <div class="col-lg-8 col-md-6 p-0 pt-1 overflow-hidden services-hero-img">
+                <img src="../static/images/female-nurse-taking-care-older-woman-with-medical-mask.jpg" alt="" class="img-fluid">
+            </div>
+        </div>
+    </div>
+
+
+</section>
+
+<section id="features-about-us" class="container-fluid mt-4">
+<!-- START THE FEATURETTES -->
+
+
+    <div class="row featurette" id="personal-care-rm">
+        <div class="col-md-12">
+            <h2 class="featurette-heading fw-normal lh-1 service-heading text-center pt-3">Who We Are <span class="text-body-secondary"></h2>
+        <p class="lead service-par">We are a leader in comprehensive care services across the UK. Our mission is to provide exceptional and compassionate care
+        tailored to the unique needs of each individual. We specialize in a range of services including Personal Care, Live-in
+        Care, Respite-to-Care, Practical Support, Specialist Areas, and Palliative Care.
+    </p>
+
+        
+    </div>
+
+</div>
+
+<!--Todo Change number-->
+
+<div class="row featurette">
+    <div class="col-md-7">
+        <p class="lead service-par">
+            At Parherssia Care, we are dedicated to providing exceptional and compassionate care tailored to the unique needs of
+            each individual. We specialize in a variety of services:
+        </p>
+        
+        <ul>
+            <li>Personal Care - tailored elderly and in-home care.</li>
+            <li>Live-in Care - constant, 24-hour support at home.</li>
+            <li>Respite-to-Care - temporary relief for caregivers.</li>
+            <li>Practical Support - assistance with daily living activities.</li>
+            <li>Specialist Areas - focused care for specific conditions.</li>
+            <li>Palliative Care - compassionate end-of-life care.</li>
+        </ul>
+        
+        <p class="lead">
+            Whether it's aiding daily routines or providing comprehensive live-in support, our mission is to ensure comfort and
+            well-being for our clients and peace of mind for their families.
+        </p>
+
+        
+        <p class="lead">
+            At Parherssia Care, we are deeply committed to enriching the lives of those in need of compassionate care. Our wide
+            array of services spans from specialized care in dementia and Alzheimer's, to robust support for disabilities,
+            underpinning our dedication to cater to various needs with personalized care plans. Central to our mission is the
+            delivery of Palliative Care, offering solace and dignity to individuals and families navigating the complexities of
+            end-of-life stages.
+        </p>
+        <p class="lead">
+            Upholding the highest standards of care, we are proud to be regulated by the Care Quality Commission (CQC), ensuring
+            our practices meet stringent safety and quality guidelines. This accreditation reflects our unwavering commitment to
+            excellence in all aspects of our service, from care delivery to professional development. Our proactive recruitment
+            team tirelessly works to onboard the finest care professionals from the UK and abroad, striving to elevate the
+            standard of living in care homes nationwide. In recognizing the indispensable role of carers, Parherssia Care
+            dedicates itself to supporting our invaluable network of both paid and unpaid carers, fostering a community where
+            everyone is acknowledged and empowered.
+        </p>
+
+    </div>
+    <div class="col-md-5">
+        <img src="../static/images/cqc-pic.png" class=" img-fluid " width="500"
+            height="500" alt="cqc-logo" >
+            
+    </div>
+</div>
+
+<hr class="featurette-divider">
+{% include 'base-service-content.html' %}
+
+</section>
+
+{% endblock %}

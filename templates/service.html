@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+
+
+
+
+<!-- Main -->
+<section id="about-us-slideshow" class="container-fluid">
+    <div class="container-fluid ">
+        <div class="row align-items-center service-inner-hero pb-2
+        " style="background-color: #365486;">
+            <!--Text-->
+            <div class="col-lg-4 col-md-6 text-center  py-0 service-text-div">
+                <h1 class="display-4 fw-bold lh-1 text-white blur-text">Our Services</h1>
+                <p class="lead text-white blur-text-p">Providing compassionate and personalised care</p>
+                <div class="d-grid gap-2 d-md-flex justify-content-center  mb-4 mb-lg-3">
+                    <a href="{{ url_for('contact_us') }}" class="btn btn-light btn-lg px-4 me-md-2 fw-bold servies-hero-btn">Contact
+                        Us</a>
+                    <a href="{{ url_for('get_jobs') }}" class="btn btn-outline-light btn-lg px-4 servies-hero-btn">Join Us</a>
+                </div>
+            </div>
+            <div class="col-lg-8 col-md-6 p-0 pt-1 overflow-hidden services-hero-img">
+                <img src="../static/images/prosthetist-removes-measure-from-person-with-disability-woman-with-amputee.jpg"
+                    alt="" class="img-fluid">
+            </div>
+        </div>
+    </div>
+
+
+
+</section>
+
+
+{% include 'base-other-services.html' %}
+
+<hr class="featurette-divider">
+
+
+
+{% include 'base-service-content.html' %}
+
+{% endblock %}

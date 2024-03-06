@@ -1,0 +1,88 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+
+
+
+
+<!-- Main -->
+<section id="about-us-slideshow" class="container-fluid">
+<div class="container-fluid">
+        <div class="row align-items-center service-inner-hero" style="background-color: #365486;">
+            <!--Text-->
+            <div class="col-lg-4 col-md-6 text-center  py-0 service-text-div">
+                <h1 class="display-4 fw-bold lh-1 text-white blur-text">Palliative Care</h1>
+            <p class="lead text-white blur-text-p">Providing compassionate end-of-life care.</p>
+            <div class="d-grid gap-2 d-md-flex justify-content-center  mb-4 mb-lg-3">
+                <a href="{{ url_for('contact_us') }}" class="btn btn-light btn-lg px-4 me-md-2 fw-bold servies-hero-btn">Contact Us</a>
+                <a href="{{ url_for('get_jobs') }}" class="btn btn-outline-light btn-lg px-4 servies-hero-btn">Join Us</a>
+            </div>
+        </div>
+        <div class="col-lg-8 col-md-6 p-0 pt-1 overflow-hidden services-hero-img">
+            <img src="../static/images/close-up-doctor-checking-patient.jpg" alt="" class="img-fluid">
+        </div>
+    </div>
+</div>
+
+
+</section>
+
+
+
+
+
+<section id="features-about-us" class="container-fluid mt-4">
+    <!-- START THE FEATURETTES -->
+
+
+    <div class="row featurette" id="personal-care-rm">
+        <div class="col-md-12">
+            <h2 class="featurette-heading fw-normal lh-1 service-heading text-center pt-3">Palliative Care at Parherssia Care<span
+                    class="text-body-secondary"></span></h2>
+            <p class="lead">Palliative Care at Parherssia Care focuses on providing compassionate and supportive care to individuals facing serious
+            illnesses. Our dedicated carers offer assistance with daily living activities, ensuring comfort, and enhancing the
+            quality of life. We understand the complexities of managing a serious illness at home and strive to provide the
+            necessary support for both our clients and their families.</p>
+
+
+        </div>
+ 
+    </div>
+
+    <hr class="featurette-divider">
+<!--Who benefits-->
+<div class="row featurette p-4" id="live-in-care-rm">
+    <div class="col-md-7 order-md-2 p-0 service-heading">
+        <h2 class="featurette-heading fw-normal lh-1 text-center text-md-start">Who Benefits from Palliative Care?</h2>
+        <p class="lead">Our Palliative Care services are tailored for:</p>
+        <ul>
+            <li>Individuals diagnosed with a serious illness, seeking comfort and care in their own homes.</li>
+            <li>Patients in need of personalized care plans that address not only physical symptoms but also emotional
+                and practical needs.</li>
+            <li>Families requiring additional support to manage the complexities of a loved one's serious illness
+                alongside ongoing medical treatments.</li>
+            <li>Anyone looking for compassionate care aimed at improving quality of life and alleviating suffering
+                during their illness.</li>
+        </ul>
+        <p class="lead">By focusing on the comprehensive well-being of our patients, our Palliative Care services aim to
+            ensure that individuals and their families receive the support and dignity they deserve at this critical
+            time. Our care plans are designed to work in conjunction with existing medical treatments, offering a
+            holistic approach to care that respects the wishes and needs of each patient.</p>
+    </div>
+    <div class="col-md-5 order-md-1">
+        <img src="../static/images/national-cancer-institute-BxXgTQEw1M4-unsplash.jpg"
+            alt="" class="img-fluid service-image">
+    </div>
+</div>
+
+
+    <hr class="featurette-divider">
+
+
+
+{% include 'base-service-content.html' %}
+
+</section>
+
+{% endblock %}

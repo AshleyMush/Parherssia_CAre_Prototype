@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100">
+    <div class="max-w-4xl mx-auto p-8">
+        <div class="grid grid-cols-3 gap-4">
+            <!-- Contact Info Section -->
+            <div class="col-span-1 bg-white p-6 rounded-lg shadow-lg">
+                <div class="space-y-4">
+                    <div class="flex items-center space-x-2">
+                        <i class="fas fa-map-marker-alt text-blue-500"></i>
+                        <div>
+                            <h6 class="font-semibold">Location:</h6>
+                            <p class="text-gray-600 text-sm">A108 Adam Street, New York, NY 535022</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <i class="fas fa-envelope text-blue-500"></i>
+                        <div>
+                            <h6 class="font-semibold">Email:</h6>
+                            <p class="text-gray-600 text-sm">info@example.com</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <i class="fas fa-phone-alt text-blue-500"></i>
+                        <div>
+                            <h6 class="font-semibold">Call:</h6>
+                            <p class="text-gray-600 text-sm">+1 5589 55488 55s</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Contact Form Section -->
+            <div class="col-span-2 bg-white p-6 rounded-lg shadow-lg">
+                <form>
+                    <div class="grid grid-cols-2 gap-4 mb-4">
+                        <input type="text" name="name" placeholder="Your Name" class="border p-2 rounded-lg w-full">
+                        <input type="email" name="email" placeholder="Your Email" class="border p-2 rounded-lg w-full">
+                    </div>
+                    <input type="text" name="subject" placeholder="Subject" class="border p-2 rounded-lg w-full mb-4">
+                    <textarea name="message" rows="4" placeholder="Message"
+                        class="border p-2 rounded-lg w-full mb-4"></textarea>
+                    <button type="submit" class="w-full bg-blue-500 text-white p-2 rounded-lg">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,105 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+
+
+
+
+<!-- Main -->
+<section id="about-us-slideshow" class="container-fluid">
+    <div class="container-fluid">
+        <div class="row align-items-center service-inner-hero" style="background-color: #365486;">
+            <!--Text-->
+            <div class="col-lg-4 col-md-6 text-center  py-0 service-text-div">
+                <h1 class="display-4 fw-bold lh-1 text-white blur-text">Personal Care</h1>
+                <p class="lead text-white blur-text-p">Providing compassionate end-of-life care.</p>
+                <div class="d-grid gap-2 d-md-flex justify-content-center  mb-4 mb-lg-3">
+                    <a href="{{ url_for('contact_us') }}" class="btn btn-light btn-lg px-4 me-md-2 fw-bold servies-hero-btn">Contact
+                        Us</a>
+                    <a href="{{ url_for('get_jobs') }}" class="btn btn-outline-light btn-lg px-4 servies-hero-btn">Join Us</a>
+                </div>
+            </div>
+            <div class="col-lg-8 col-md-6 p-0 pt-1 overflow-hidden services-hero-img">
+                <img src="../static/images/medium-shot-woman-nurse.jpg" alt="" class="img-fluid">
+            </div>
+        </div>
+    </div>
+
+    
+
+</section>
+
+
+
+
+
+
+<section id="features-about-us" class="container-fluid mt-4 ">
+    <!-- START THE FEATURETTES -->
+
+
+    <div class="row featurette" id="personal-care-rm">
+        <div class="col-md-12">
+            <h2 class="featurette-heading fw-normal lh-1 service-heading text-center pt-3" >Understanding Personal Care<span
+                    class="text-body-secondary"></span></h2>
+                    <p class="lead service-par">Personal Care services are essential for individuals who need assistance with their daily activities to maintain a
+                    quality life at home. These services cater to anyone who might find it challenging to manage personal care routines
+                    independently due to age, disability, or health conditions. Parherssia Care specializes in delivering compassionate and
+                    personalized care, ensuring the dignity, safety, and well-being of each client are upheld. Our approach improves the
+                    quality of life not just for our clients but for their families as well</p>
+
+        </div>
+        
+    </div>
+
+
+
+
+    
+    <hr class="featurette-divider" >
+    
+
+<!--Who benefits-->
+
+<div class="row featurette p-4" id="personal-care-rm">
+    <div class="col-md-7 order-md-2 p-0 service-heading">
+        <h2 class="featurette-heading fw-normal lh-1 text-center text-md-start">
+            Who Are Personal Care Services For?</h2>
+        <p class="lead service-par">
+            Our Personal Care services are designed for a wide range of individuals, including
+            the elderly, those recovering from surgeries, individuals with disabilities, and those who require
+            assistance due to chronic health conditions. Our services are especially beneficial for those wishing to
+            remain in their homes while receiving the necessary care to support their independence and daily living
+            activities.
+        </p>
+
+        <!-- List of who the services are for -->
+        <ul class="list-unstyled">
+            <li><span class="text-success">&#10003;</span> The elderly</li>
+            <li><span class="text-success">&#10003;</span> Individuals recovering from surgeries</li>
+            <li><span class="text-success">&#10003;</span> Individuals with disabilities</li>
+            <li><span class="text-success">&#10003;</span> Those requiring assistance due to chronic health conditions
+            </li>
+            <li><span class="text-success">&#10003;</span> Anyone wishing to remain in their homes while receiving
+                support</li>
+        </ul>
+    </div>
+    <div class="col-md-5 order-md-1">
+        <img src="../static/images/female-nurse-with-mask-putting-gloves.jpg"
+            alt="" class="img-fluid service-image">
+    </div>
+</div>
+
+
+
+
+
+
+
+{% include 'base-service-content.html' %}
+
+
+</section>
+
+{% endblock %}

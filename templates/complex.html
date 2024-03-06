@@ -1,0 +1,90 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+
+
+
+
+<!-- Main -->
+<section id="about-us-slideshow" class="container-fluid">
+    <div class="container-fluid">
+        <div class="row align-items-center service-inner-hero" style="background-color: #365486;">
+            <!--Text-->
+            <div class="col-lg-4 col-md-6 text-center  py-0 service-text-div">
+                <h1 class="display-4 fw-bold lh-1 text-white blur-text">Complex Care</h1>
+                <p class="lead text-white blur-text-p">Tailored to suit your needs</p>
+                <div class="d-grid gap-2 d-md-flex justify-content-center  mb-4 mb-lg-3">
+                    <a href="{{ url_for('contact_us') }}" class="btn btn-light btn-lg px-4 me-md-2 fw-bold servies-hero-btn">Contact
+                        Us</a>
+                    <a href="{{ url_for('get_jobs') }}" class="btn btn-outline-light btn-lg px-4">Join Us</a>
+                </div>
+            </div>
+            <div class="col-lg-8 col-md-6 p-0 pt-1 overflow-hidden services-hero-img">
+                <img src="../static/images/old-disabled-lady-walking-with-help-crutches-nursing-home-while-nurse-is-takinh-care-her.jpg" alt="" class="img-fluid">
+            </div>
+        </div>
+    </div>
+
+
+</section>
+
+
+
+
+<section id="features-about-us" class="container-fluid mt-4">
+    <!-- START THE FEATURETTES -->
+
+    <div class="row featurette" id="personal-care-rm">
+        <div class="col-md-12">
+            <h2 class="featurette-heading fw-normal lh-1 service-heading text-center pt-3">Complex Care at Parherssia Care<span
+                    class="text-body-secondary"></span></h2>
+        <p class="lead service-par">Complex Care is designed for individuals with long-term, chronic, or multiple health conditions that require
+            multifaceted care strategies. At Parherssia Care, we understand the intricacies of managing such conditions and offer
+            specialized care plans that address the physical, emotional, and psychological needs of our clients. Our Complex Care
+            services are tailored to provide support for a range of conditions including neurological, respiratory, and muscular
+            diseases, ensuring a holistic approach to care.</p>
+
+
+        </div>
+
+    </div>
+
+    <hr class="featurette-divider">
+<!--Benefits-->
+<div class="row featurette p-4" id="live-in-care-rm">
+    <div class="col-md-7 order-md-2 p-0 service-heading">
+        <h2 class="featurette-heading fw-normal lh-1 text-center text-md-start">Who Benefits from Complex Care?</h2>
+        <p class="lead">Our Complex Care services are specifically designed for:</p>
+        <ul>
+            <li>Individuals with long-term health conditions requiring specialized, ongoing care and monitoring.</li>
+            <li>Patients recovering from serious injuries or surgeries needing comprehensive rehabilitation support at
+                home.</li>
+            <li>People living with chronic illnesses or disabilities who require tailored care plans to manage daily
+                activities and health needs.</li>
+            <li>Children and adults with neurodegenerative conditions seeking expert care and support to enhance their
+                quality of life.</li>
+            <li>Families looking for reliable, professional care for loved ones with complex medical needs, ensuring
+                safety and comfort in their own homes.</li>
+        </ul>
+        <p class="lead">Our approach to Complex Care is holistic and patient-focused, ensuring that every aspect of the
+            patient's condition is addressed through personalized care plans. By integrating medical care,
+            rehabilitation, and support for daily activities, we aim to empower our clients and their families to
+            achieve the best possible quality of life, despite the challenges of complex health conditions.</p>
+    </div>
+    <div class="col-md-5 order-md-1">
+        <img src="../static/images/prosthetist-removes-measure-from-person-with-disability-woman-with-amputee.jpg"
+            alt="" class="img-fluid service-image">
+    </div>
+</div>
+
+
+    <hr class="featurette-divider">
+
+
+
+{% include 'base-service-content.html' %}
+
+</section>
+
+{% endblock %}

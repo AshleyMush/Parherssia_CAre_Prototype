@@ -1,0 +1,493 @@
+{% extends "base.html" %} {% block content %}
+
+<body class="landing is-preload">
+  <div id="page-wrapper">
+    <!-- Banner -->
+    <section id="banner">
+      <h2 id="Parherssia">Parherssia Care</h2>
+
+      <ul class="actions special">
+        <li>
+          <a href="{{url_for('contact_us')}}" class="button primary top-contact-us">Contact Us</a>
+        </li>
+        <li>
+          <a href="{{url_for('get_jobs')}}" id="top-callback" class="button top-callback">Join Us</a>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Main -->
+    <section id="main" class="container">
+      <section class="box special top-hero">
+        <header class="major">
+          <h2>
+            Some Exciting Intro For Your Company
+            <br />
+            Some interesting hook here
+          </h2>
+          <p>
+            More about this amazing company<br />
+            Tell us a bit more in a simple and short sentence
+          </p>
+        </header>
+        <span class="image featured"><img src="images/pic01.jpg" alt="" /></span>
+      </section>
+      <!--Features
+			<section class="box special features">
+				<div class="features-row">
+					<section>
+						<span class="icon solid major fa-bolt accent2"></span>
+						<h3>Magna etiam</h3>
+						<p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim
+							rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
+					</section>
+					<section>
+						<span class="icon solid major fa-chart-area accent3"></span>
+						<h3>Ipsum dolor</h3>
+						<p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim
+							rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
+					</section>
+				</div>
+				<div class="features-row">
+					<section>
+						<span class="icon solid major fa-cloud accent4"></span>
+						<h3>Sed feugiat</h3>
+						<p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim
+							rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
+					</section>
+					<section>
+						<span class="icon solid major fa-lock accent5"></span>
+						<h3>Enim phasellus</h3>
+						<p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim
+							rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
+					</section>
+				</div>
+			</section>
+			-->
+
+      <!--Bottom Row-->
+      <!--
+			<div class="row">
+				<div class="col-6 col-12-narrower">
+
+					<section class="box special">
+						<span class="image featured"><img src="images/pic02.jpg" alt="" /></span>
+						<h3>Sed lorem adipiscing</h3>
+						<p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim
+							rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
+						<ul class="actions special">
+							<li><a href="#" class="button alt">Learn More</a></li>
+						</ul>
+					</section>
+
+				</div>
+				<div class="col-6 col-12-narrower">
+
+					<section class="box special">
+						<span class="image featured"><img src="images/pic03.jpg" alt="" /></span>
+						<h3>Accumsan integer</h3>
+						<p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim
+							rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
+						<ul class="actions special">
+							<li><a href="#" class="button alt">Learn More</a></li>
+						</ul>
+					</section>
+
+				</div>
+			</div>
+			-->
+    </section>
+
+
+<section id="features-about-us" class="container-fluid mt-0">
+  <!-- START THE FEATURETTES -->
+        <div class="section-title text-center">
+          <h2 class="blur-text">Our Services</h2>
+          <p class="blur-text-p">Click on any of the services to read more about our wide variety of services
+          </p>
+        </div>
+
+
+
+{% include 'base-other-services.html' %}
+
+</section>
+
+
+    <!--Services-->
+<section id="services" class="services pb-4">
+  <div class="container-fluid">
+
+
+
+    <div class="row gy-5 ">
+      <div class="col-lg-2">
+        <ul class="nav nav-tabs flex-column" role="tablist">
+          <li class="nav-item" role="presentation">
+            <a class="nav-link no smooth-scroll active" data-bs-toggle="tab" href="#personal-care" aria-selected="true"
+              role="tab">Personal Care</a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link no smooth-scroll" data-bs-toggle="tab" href="#live-in-care" aria-selected="false"
+              role="tab" tabindex="-1">Live in Care</a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link no smooth-scroll" data-bs-toggle="tab" href="#respite-care" aria-selected="false"
+              role="tab" tabindex="-1">Respite to Care</a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link no smooth-scroll" data-bs-toggle="tab" href="#practical-support" aria-selected="false"
+              role="tab" tabindex="-1">Practical Support</a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link no smooth-scroll" data-bs-toggle="tab" href="#palliative-care" aria-selected="false"
+              role="tab" tabindex="-1">Complex Care</a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link no smooth-scroll" data-bs-toggle="tab" href="#specialist-care" aria-selected="false"
+              role="tab" tabindex="-1">Palliative Care</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-lg-10">
+        <div class="tab-content">
+          <!--Personal Care -->
+          <div class="tab-pane active show" id="personal-care" role="tabpanel">
+            <div class="row gy-4">
+              <div class="col-lg-8 details">
+                <h3>Personal Care</h3>
+                <p class="fst-italic">
+                  Our professional staff offer a range of personal care
+                  services, upholding dignity and respect for our clients.
+                  These services include:
+                </p>
+                <ul>
+                  <li>
+                    Regulated personal care activities, ensuring
+                    registration, inspection, and rating compliance.
+                  </li>
+                  <li>
+                    Comprehensive personal hygiene support, including
+                    washing, bathing, and continence care.
+                  </li>
+                  <li>
+                    Assistance with dressing, from full support to help with
+                    specific items like socks or surgical stockings.
+                  </li>
+                </ul>
+               
+                <p></p>
+                <ul class="actions special">
+                  <li><a href="/personal-care" class="button alt">Read More</a></li>
+                </ul>
+
+              </div>
+              <div class="col-lg-4 text-center" style="padding-left: 10px; padding-right: 10px">
+              </div>
+            </div>
+          </div>
+
+          <!-- Live in Care -->
+          <div class="tab-pane" id="live-in-care" role="tabpanel">
+            <div class="row gy-4">
+              <div class="col-lg-8 details">
+                <h3>Live-in Care</h3>
+                <p class="fst-italic">
+                  Our live-in care services are custom-tailored to each
+                  client's needs, delivered by passionate, well-trained
+                  staff ensuring independence and enjoyment at home. Key
+                  features include:
+                </p>
+                <ul>
+                  <li>
+                    Personalized care plans based on in-person assessments, Person-centred support, with regular care reviews for service quality and client
+                    needs.
+                  </li>
+
+                  <li>Family involvement and updates.</li>
+
+                  <li>
+                    Support for appointments, mobility, and specialist needs
+                    like dementia care.
+                  </li>
+                  <li>
+                    Thoroughly vetted, English-speaking carers with ongoing
+                    training and CQC compliance.
+                  </li>
+                  <li>Expert post-hospital care.</li>
+                </ul>
+                <ul class="actions special">
+                  <li><a href="/live-in" class="button alt">Read More</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-4 text-center">
+                
+              </div>
+            </div>
+          </div>
+          <!-- Respite to Care -->
+          <div class="tab-pane" id="respite-care" role="tabpanel">
+            <div class="row gy-4">
+              <div class="col-lg-8 details">
+                <h3>Respite-to-Care</h3>
+                <p>
+                  Respite care provides a short-term break, typically one to
+                  two weeks, with care from a professional different from
+                  your usual provider. These breaks, which can be planned or
+                  unplanned, are available in your own home. Our team of
+                  dedicated carers, trained to the highest standards, are
+                  ready to support your loved one, ensuring they receive the
+                  necessary care even when you're not available. As we are
+                  regulated by the
+                  <a href="https://www.cqc.org.uk/provider/1-9544976230">Care Quality Commission (CQC)</a>, you can
+                  be confident in the safety and quality of our
+                  care. Our respite services cover a range of needs, from
+                  care for disabled individuals to companionship and
+                  condition-specific support. We offer guidance and
+                  assistance throughout the process of arranging respite
+                  care, ensuring a smooth and beneficial experience for all
+                  involved.
+                </p>
+                <ul class="actions special">
+                  <li><a href="/respite" class="button alt">Read More</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-4 text-center">
+
+              </div>
+            </div>
+          </div>
+          <!-- Practical Support-->
+          <div class="tab-pane" id="practical-support" role="tabpanel">
+            <div class="row gy-4">
+              <div class="col-lg-8 details">
+                <h3>Practical Support</h3>
+                <p>
+                  At Parherssia Care, we provide a wide range of practical
+                  help and support to people in the community who, due to
+                  extreme frailty, disability, or illness, require
+                  assistance in their own homes. Our support enables our
+                  service users to remain in their homes, close to their
+                  loved ones and local community. While in their homes, our
+                  service users can lead as normal a life as possible,
+                  maintaining dignity and surrounded by their personal
+                  belongings.
+                </p>
+                <ul class="actions special">
+                  <li><a href="/practical-support" class="button alt">Read More</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-4 text-center">
+                
+              </div>
+            </div>
+          </div>
+          <!-- Complex Care -->
+          <div class="tab-pane" id="palliative-care" role="tabpanel">
+            <div class="row gy-4">
+              <div class="col-lg-8 details">
+                <h3>Complex Care</h3>
+                <p>
+                  Parherssia Care provides specialist care for individuals
+                  requiring medium to long-term, continuing specialist or
+                  substantial care due to a disability, a debilitating
+                  mental health condition, medical complications, or chronic
+                  illnesses such as Huntington’s Disease, Dementia, or
+                  Cerebral Palsy. We are committed to supporting you with
+                  quality home care, ensuring a healthy, happy life with
+                  choice and independence. Our services include:
+                </p>
+                <p></p>
+                <ul class="actions special">
+                  <li><a href="/complex" class="button alt">Read More</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-4 text-center">
+                
+
+              </div>
+            </div>
+          </div>
+          <!-- Palliative Care -->
+          <div class="tab-pane" id="specialist-care" role="tabpanel">
+            <div class="row gy-4">
+              <div class="col-lg-8 details">
+                <h3>Palliative Care</h3>
+                <p>
+                  At Parherssia Care, we provide compassionate end-of-life
+                  care, ensuring a comfortable and dignified environment.
+                  Our support includes medical staff, hospices, and other
+                  professionals available whenever needed. Our care
+                  assistants offer companionship and support to residents
+                  and their families, providing a reassuring presence during
+                  a challenging time. Our palliative care delivers:
+                </p>
+
+                <p></p>
+                <ul class="actions special">
+                  <li><a href="/palliative" class="button alt">Read More</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-4 text-center">
+
+               
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+    
+
+    <!-- CTA -->
+    <!--Contact Info divider-->
+    <div class="container-fluid contact-us-div text-white mb-4 p-4 p-5 call-to-action">
+      <div class="d-flex flex-column flex-md-row justify-content-md-between align-items-center py-3 p-5">
+        <div class="text-center text-md-start mb-3 mb-md-0 ">
+          <h3 class="text-white blur-text contact-us-text">Speak To Our Team Today!</h3>
+    
+        </div>
+        <div class="col-12 col-md-4 contact-buttons d-flex justify-content-center justify-content-md-end">
+          <!-- TODO: Add phone number and Email-->
+          
+          <a class="btn  d-inline-flex align-items-center me-2 contact-btns" href="tel:+447478881797">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill"
+              viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
+            </svg> Call
+          </a>
+          <a class="btn  d-inline-flex align-items-center me-2 contact-btns" href="mailto:tanaka.mush@gmail.com">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill"
+              viewBox="0 0 16 16">
+              <path
+                d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z" />
+            </svg>
+            Email
+          </a>
+          <button class="btn  d-inline-flex align-items-center contact-btns">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              class="bi bi-journal-richtext" viewBox="0 0 16 16">
+              <path
+                d="M7.5 3.75a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0m-.861 1.542 1.33.886 1.854-1.855a.25.25 0 0 1 .289-.047L11 4.75V7a.5.5 0 0 1-.5.5h-5A.5.5 0 0 1 5 7v-.5s1.54-1.274 1.639-1.208M5 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m0 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5" />
+              <path
+                d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2" />
+              <path
+                d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1z" />
+            </svg>
+            Brochure
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!--Attributes-->
+    <!--choose us hero-->
+    <section id="attributes" class="attributes pb-1 choose-us-hero">
+      <div class="container">
+        <div class="section-title text-center">
+          <h2 class="blur-text">Why so many choose us?</h2>
+        </div>
+        <div class="row">
+          <!--Row 1-->
+          <div class="col-lg-4 text-center">
+            <img src="../static/images/trained.svg" class="rounded-circle choose-us" width="200" height="180" alt="" />
+    
+            <h2 class="fw-normal text-white">Trained Staff</h2>
+            <p class="text-white">
+              Our staff are well trained, qualified and experienced in the
+              relevant fields that our clients require.
+            </p>
+          </div>
+    
+          <!-- Row 2-->
+          <div class="col-lg-4 text-center">
+            <img src="../static/images/personalised.svg" class="rounded-circle choose-us" width="200" height="180" alt="" />
+    
+            <h2 class="fw-normal text-white">Personalised Care</h2>
+            <p class="text-white">
+              We not only provide domiciliary staff, we provide bespoke care
+              plans to meet the unique needs of our clients.
+            </p>
+          </div>
+          <!-- Row 3-->
+          <div class="col-lg-4 text-center">
+            <img src="../static/images/staff3.svg" class="rounded-circle choose-us" width="200" height="180" alt="" />
+            <h2 class="fw-normal text-white">On Call Service</h2>
+            <p class="text-white">
+              Our coordination team are available anytime of the day or night to
+              provide support, even at weekends.
+            </p>
+          </div>
+          <!-- /.col-lg-4 -->
+        </div>
+      </div>
+    </section>
+
+    <!--FAQs-->
+    <section id="faq" class="faq section-bg">
+      <div class="container">
+        <div class="section-title text-center">
+          <h2 class="blur-text">Frequently Asked Questions</h2>
+          <p class="blur-text-p">
+            If you've got questions, we may have answers
+          </p>
+        </div>
+
+        <div class="faq-list mx-auto">
+          <div class="accordion accordion-flush" id="accordionExample">
+            <!-- Accordion Item 1 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#faq-list-1">
+                  Question 1 Title
+                </button>
+              </h2>
+              <div id="faq-list-1" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">Answer to question 1.</div>
+              </div>
+            </div>
+
+            <!-- Accordion Item 2 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#faq-list-2">
+                  Question 2 Title
+                </button>
+              </h2>
+              <div id="faq-list-2" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">Answer to question 2.</div>
+              </div>
+            </div>
+
+            <!-- Accordion Item 3 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#faq-list-3">
+                  Question 3 Title
+                </button>
+              </h2>
+              <div id="faq-list-3" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">Answer to question 3.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+    </section>
+
+    <!--MAP & Contact Us-->
+{% include 'base-contact.html' %}
+
+    {% endblock %}
+  </div>
+</body>

@@ -1,0 +1,95 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+
+
+
+
+<!-- Main -->
+<section id="about-us-slideshow" class="container-fluid">
+    <div class="container-fluid">
+        <div class="row align-items-center service-inner-hero" style="background-color: #365486;">
+            <!--Text-->
+            <div class="col-lg-4 col-md-6 text-center  py-0 service-text-div">
+                <h1 class="display-4 fw-bold lh-1 text-white blur-text">Practical Support</h1>
+                <p class="lead text-white blur-text-p">Assistance with daily living activities</p>
+                <div class="d-grid gap-2 d-md-flex justify-content-center  mb-4 mb-lg-3">
+                    <a href="{{ url_for('contact_us') }}" class="btn btn-light btn-lg px-4 me-md-2 fw-bold servies-hero-btn">Contact
+                        Us</a>
+                    <a href="{{ url_for('get_jobs') }}" class="btn btn-outline-light btn-lg px-4 servies-hero-btn">Join Us</a>
+                </div>
+            </div>
+            <div class="col-lg-8 col-md-6 p-0 pt-1 overflow-hidden services-hero-img">
+                <img src="../static/images/last-clearing-up-everything-done.jpg" alt="" class="img-fluid">
+            </div>
+        </div>
+    </div>
+
+
+</section>
+
+
+
+
+
+
+<section id="features-about-us" class="container-fluid mt-4">
+    <!-- START THE FEATURETTES -->
+
+
+    <div class="row featurette" id="personal-care-rm">
+        <div class="col-md-12">
+            <h2 class="featurette-heading fw-normal lh-1 service-heading text-center pt-3">Practical Support at Parherssia<span
+                    class="text-body-secondary"></span></h2>
+            <p class="lead service-par">Practical Support services are crucial for individuals who require assistance with day-to-day tasks to maintain an
+            independent and fulfilling life at home. Parherssia Care's Practical Support is designed for people who might struggle
+            with household chores, errands, and other daily activities due to age, disability, or health conditions. Our dedicated
+            team helps ease the burden of daily tasks, enabling our clients to enjoy a more manageable and stress-free lifestyle..</p>
+
+
+        </div>
+
+    </div>
+
+    <hr class="featurette-divider">
+
+<div class="row featurette p-4" id="live-in-care-rm">
+    <div class="col-md-7 order-md-2 p-0 service-heading">
+        <h2 class="featurette-heading fw-normal lh-1 text-center text-md-start">Who Benefits from Practical Support?
+        </h2>
+        <p class="lead">Our Practical Support services are beneficial for:</p>
+        <ul>
+            <li>Elderly individuals seeking assistance with daily tasks to maintain their independence at home.</li>
+            <li>People recovering from surgery or illness who need help with household chores and personal care as they
+                heal.</li>
+            <li>Individuals with disabilities requiring support to navigate daily activities and enhance their quality
+                of life.</li>
+            <li>Families and caregivers in need of respite or extra help in caring for loved ones with demanding care
+                needs.</li>
+            <li>Anyone looking for assistance with day-to-day tasks, from grocery shopping to transportation to medical
+                appointments.</li>
+        </ul>
+        <p class="lead">Our approach to Practical Support is centered around empowering our clients, providing them with
+            the assistance they need to live safely and comfortably in their own homes. By offering personalized support
+            tailored to the unique needs of each individual, we help our clients manage their daily tasks more
+            efficiently, promoting independence and improving their overall well-being.</p>
+    </div>
+    <div class="col-md-5 order-md-1">
+        <img src="../static/images/close-up-woman-being-fed.jpg"
+            alt="" class="img-fluid service-image">
+    </div>
+</div>
+
+
+    <hr class="featurette-divider">
+
+{% include 'base-service-content.html' %}
+
+    <!-- /END THE FEATURETTES -->
+
+    
+
+</section>
+
+{% endblock %}

@@ -1,0 +1,95 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+
+
+
+
+<!-- Main -->
+<section id="about-us-slideshow" class="container-fluid">
+    <div class="container-fluid">
+        <div class="row align-items-center service-inner-hero" style="background-color: #365486;">
+            <!--Text-->
+            <div class="col-lg-4 col-md-6 text-center  py-0 service-text-div">
+                <h1 class="display-4 fw-bold lh-1 text-white blur-text">Live In Care</h1>
+                <p class="lead text-white blur-text-p">Your Compantion At Home</p>
+                <div class="d-grid gap-2 d-md-flex justify-content-center  mb-4 mb-lg-3">
+                    <a href="{{ url_for('contact_us') }}" class="btn btn-light btn-lg px-4 me-md-2 fw-bold servies-hero-btn">Contact
+                        Us</a>
+                    <a href="{{ url_for('get_jobs') }}" class="btn btn-outline-light btn-lg px-4 servies-hero-btn">Join Us</a>
+                </div>
+            </div>
+            <div class="col-lg-8 col-md-6 p-0 pt-1 overflow-hidden services-hero-img">
+                <img src="../static/images/nurse-taking-care-old-woman.jpg" alt="" class="img-fluid">
+            </div>
+        </div>
+    </div>
+
+
+</section>
+
+
+
+
+<section id="features-about-us" class="container-fluid mt-4">
+    <!-- START THE FEATURETTES -->
+
+
+    <div class="row featurette" id="personal-care-rm">
+        <div class="col-md-12">
+            <h2 class="featurette-heading fw-normal lh-1 service-heading text-center pt-3" >
+                Live-in Care<span class="text-body-secondary"></span></h2>
+            <p class="lead service-par">
+                Live-in care is a deeply personal and comprehensive form of support where a professional
+                caregiver resides in your home,
+                offering 24/7 assistance tailored to your individual needs. This service is ideal for those who require
+                constant care
+                and wish to maintain their independence at home. Live-in caregivers are trained to handle a wide range
+                of tasks from
+                personal care, medication management, to household chores, ensuring comfort and promoting autonomy in a
+                familiar setting
+            </p>
+
+
+        </div>
+
+    </div>
+
+    <hr class="featurette-divider">
+<!--Who benefits-->
+<div class="row featurette p-4" id="live-in-care-rm">
+    <div class="col-md-7 order-md-2 p-0 service-heading">
+        <h2 class="featurette-heading fw-normal lh-1 text-center text-md-start">Benefits of Live-in Care</h2>
+        <p class="lead">Opting for live-in care with us means embracing a lifestyle where safety, companionship, and
+            personalized attention are prioritized. Live-in care enables individuals, especially the elderly, to enjoy
+            the comfort of their own homes while receiving professional and compassionate care. This personalized care
+            solution is particularly beneficial for:</p>
+        <ul class="list-unstyled">
+            <li><span class="text-success">&#10003;</span>Elderly individuals seeking to maintain independence at home</li>
+            <li><span class="text-success">&#10003;</span> Couples with differing care needs who wish to stay together</li>
+            <li><span class="text-success">&#10003;</span> Those with chronic conditions requiring continuous care</li>
+            <li><span class="text-success">&#10003;</span> Individuals recovering from surgery or hospital stay</li>
+            <li><span class="text-success">&#10003;</span> People with disabilities needing specialized daily support</li>
+        </ul>
+        <p class="lead">Our live-in care services are not just about meeting physical needs, they significantly
+            contribute to emotional and mental well-being by providing companionship, reducing feelings of loneliness,
+            and fostering a sense of belonging and community.</p>
+    </div>
+    <div class="col-md-5 order-md-1">
+        <img src="../static/images/live in carer-disabled care-elderly-care-live-in-carer-jobs-old-people-care.jpg"
+            alt="" class="img-fluid service-image">
+    </div>
+</div>
+
+
+    <hr class="featurette-divider">
+
+
+
+   
+{% include 'base-service-content.html' %}
+    
+    </section>
+    
+    {% endblock %}
