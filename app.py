@@ -9,7 +9,7 @@ from twilio.rest import Client
 
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = os.environ.get("SECRET KEY")
+app.config['SECRET_KEY'] = os.environ.get("SECRET_KEY")
 Bootstrap5(app)
 
 
