@@ -5,11 +5,15 @@ import smtplib
 from email.mime.text import MIMEText
 import os
 from twilio.rest import Client
+from datetime import datetime
 
 
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = os.environ.get("SECRET_KEY")
+app.config['SECRET_KEY'] = "SECRET_KEY"
+
+
+# app.config['SECRET_KEY'] = os.environ.get("SECRET_KEY")
 Bootstrap5(app)
 
 
@@ -33,6 +37,8 @@ client = Client(account_sid, auth_token)
 
 @app.route('/', methods=['GET', 'POST'])
 def go_home():
+    current_year = datetime.now().year
+
     callback_form = CallbackForm()
     contact_form = ContactForm()
 
@@ -65,7 +71,7 @@ def go_home():
         send_admin_email(name=name, subject=subject,email=email,message=message)
 
 
-    return render_template('index.html', callback_form=callback_form, contact_form=contact_form)
+    return render_template('index.html', callback_form=callback_form, contact_form=contact_form, current_year=current_year)
 
 
 @app.route('/contact-us', methods=['GET', 'POST'])
